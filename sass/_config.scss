@@ -1,0 +1,77 @@
+$primaryColor: #3d1486;
+$secondaryColor: rgba(255, 255, 255, 0.9);
+$tertiaryColor: #d8b101;
+// <!-- google fonts -->
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	a {
+		text-decoration: none;
+	}
+}
+.show {
+	display: block !important;
+}
+
+.rotate-1 {
+	transform: rotate(-45deg) translate(-3px, 5px);
+}
+.rotate-2 {
+	opacity: 0;
+}
+.rotate-3 {
+	transform: rotate(45deg) translate(-3px, -5px);
+}
+
+%btn {
+	display: block;
+	padding: 0.8rem 1.5rem;
+	border-radius: 1rem;
+	background: $tertiaryColor;
+	border: 2px solid $tertiaryColor;
+	outline: none;
+
+	a {
+		color: $secondaryColor;
+		font-size: 1.4rem;
+	}
+
+	&:hover {
+		background: transparent;
+		border: 2px solid $tertiaryColor;
+		a {
+			color: $tertiaryColor;
+		}
+	}
+}
+
+// Section Head Styles
+.section-head {
+	display: inline-block;
+	font-size: 2.5rem;
+	margin: 1rem;
+	line-height: 2.5rem;
+	font-weight: bold;
+	color: $tertiaryColor;
+	.underline {
+		background: $primaryColor;
+		width: 40px;
+		height: 4px;
+		border-radius: 3rem;
+		transition: all 1s ease;
+	}
+
+	&:hover {
+		.underline {
+			width: 150px;
+			background: rgba(128, 128, 128, 0.7);
+		}
+	}
+}

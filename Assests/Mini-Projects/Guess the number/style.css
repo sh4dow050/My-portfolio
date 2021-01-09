@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.banner {
+	background: grey;
+	font-size: 2rem;
+	color: white;
+	padding: 1.5rem 0;
+}
+
+.banner-container {
+	min-height: 85vh;
+	background: url("./nadine-shaabana-YsPnamiHdmI-unsplash.jpg") center/cover
+		no-repeat;
+	color: rgb(253, 253, 0);
+	font-size: 1.5rem;
+	text-align: center;
+	padding-top: 2rem;
+}
+.main {
+	font-size: 4rem;
+	padding-bottom: 1rem;
+}
+button {
+	border-radius: 0.4rem;
+	border: 2px solid black;
+	padding: 1rem;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	font-size: 1rem;
+	outline: none;
+	cursor: pointer;
+}
+#check-btn {
+	background: black;
+	color: rgb(182, 175, 175);
+}
+button:hover {
+	transform: scale(1.1);
+}
+input {
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	background: transparent;
+	outline: none;
+	font-size: 1rem;
+	border: none;
+	color: royalblue;
+	border-bottom: 2px solid rgb(199, 199, 0);
+}
+.answer {
+	color: white;
+}
+#placeholder {
+	color: white;
+}
+.feedback {
+	padding: 1rem;
+	font-size: 1.8rem;
+	text-align: left;
+	color: black;
+	display: none;
+	text-align: center;
+}
+
+.showItem {
+	display: block;
+}
+
+.guess-list {
+	color: black;
+	margin: 3rem;
+}
+
+.guesses {
+	border: 1px solid black;
+	padding: 0.7rem 0;
+	max-width: 500px;
+	margin: 0 auto;
+	border-radius: 0.2rem;
+}

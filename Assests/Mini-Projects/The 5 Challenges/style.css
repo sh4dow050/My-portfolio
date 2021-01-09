@@ -1,0 +1,167 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.body-contain {
+	margin: 3rem;
+	padding: 1rem 0;
+	border: 3px solid;
+}
+
+.seperator {
+	height: 2px;
+	background: black;
+	margin: 1rem 0;
+}
+
+/* Buttons style */
+button {
+	text-transform: capitalize;
+	padding: 0.7rem 1.2rem;
+	color: white;
+	font-size: 1.2rem;
+	border-radius: 6px;
+	border: 1px solid black;
+	margin: 0 2rem;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.age-btn:hover,
+.generator:hover {
+	transform: scale(1.05);
+}
+
+/* Challenge-1 */
+.btn-contain {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 2.5rem 0;
+}
+.convert-btn {
+	background: red;
+}
+.reset-btn {
+	background: blue;
+}
+
+/* Challenge-2 */
+.generator {
+	background: rgb(0, 95, 0);
+	margin: 0 auto;
+}
+.cat-img-contain {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.single-img {
+	margin: 1rem 0;
+}
+
+/* challenge-3 */
+
+.three-game button {
+	padding: 0;
+	margin: 1rem;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.three-game img {
+	border-radius: 1.5rem;
+}
+
+.clicked {
+	outline: 5px solid blue;
+}
+
+/* Challenge 4 */
+
+#dropdown-btn {
+	outline: none;
+	padding: 0.5rem;
+	margin-top: 3rem;
+}
+.change-color button {
+	padding: 0.5rem 0.8rem;
+	margin: 1rem;
+	color: black;
+}
+
+.backdrop1 {
+	background-color: firebrick;
+}
+.backdrop2 {
+	background-color: burlywood;
+}
+.backdrop3 {
+	background-color: cornflowerblue;
+}
+.backdrop4 {
+	background-color: goldenrod;
+}
+
+/* challenge-5 */
+.blackjack .seperator {
+	margin-bottom: 0;
+}
+.hori-seperator {
+	height: auto;
+	width: 0.8px;
+}
+.blackjack .btn-contain {
+	padding-bottom: 1rem;
+}
+.blackjack-contain {
+	min-height: 85vh;
+	margin: 0 0 2rem 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+		url(./img/blackjack\ Background.jpg) center/cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.scores {
+	padding-top: 1rem;
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-evenly;
+	color: white;
+}
+.your-container {
+	flex: 1;
+}
+.dealer-container {
+	flex: 1;
+}
+.hit-btn {
+	background: firebrick;
+}
+.deal-btn {
+	background: blue;
+}
+.stand-btn {
+	background: yellowgreen;
+}
+.feedback {
+	padding: 1rem 0;
+}
+table {
+	margin: 0 auto;
+}
+
+table,
+td,
+th {
+	border: 1px solid black;
+	padding: 1rem;
+	border-collapse: collapse;
+}

@@ -1,0 +1,254 @@
+@import './config';
+
+// Mobile First
+// Nav-bar
+.nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	background: $primaryColor;
+	color: $tertiaryColor;
+	border-bottom: 1px solid $tertiaryColor;
+	.logo-space {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav-btn {
+		height: 32px;
+		border: 2px solid;
+		margin: 0 1rem;
+		padding: 5px;
+	}
+	.line {
+		width: 18px;
+		height: 2px;
+		background: $tertiaryColor;
+		margin: 3px 0;
+	}
+	.far {
+		font-size: 1.5rem;
+	}
+	img {
+		height: 50px;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		background: #5912b7;
+		padding-top: 0.2px;
+		a {
+			display: none;
+			font-size: 1.5rem;
+			padding: 0.6rem;
+			color: $tertiaryColor;
+
+			&:hover {
+				padding-left: 1.5rem;
+				background: $primaryColor;
+				color: $secondaryColor;
+			}
+		}
+	}
+}
+// banner
+.banner {
+	background: $primaryColor;
+	height: calc(100vh - 50px);
+	clip-path: ellipse(114% 100% at 9.04% 0%);
+	// clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+	display: flex;
+	justify-content: center;
+
+	&-contain {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transform: translateY(-50px);
+		color: $secondaryColor;
+		padding: 0 1rem;
+		h1 {
+			font-size: 2.5rem;
+			text-align: center;
+		}
+		h2 {
+			font-size: 1.5rem;
+			font-weight: 200;
+			text-align: center;
+			span {
+				padding-left: 2rem;
+			}
+		}
+		button {
+			@extend %btn;
+			margin: 2rem auto;
+		}
+	}
+}
+
+// skills
+.skills-contain {
+	margin-top: 2rem;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	img {
+		height: 170px;
+		width: 250px;
+	}
+	.skill {
+		width: 400px;
+		padding: 1rem;
+		transition: background 0.5s linear;
+		h3 {
+			font-size: 1.4rem;
+			text-transform: uppercase;
+		}
+
+		&:hover {
+			background: rgba(128, 128, 128, 0.4);
+			color: $primaryColor;
+		}
+	}
+}
+
+// projects
+.projects {
+	margin: 2.5rem 0;
+	background: $primaryColor;
+	padding-bottom: 1rem;
+	button {
+		@extend %btn;
+		margin: 1rem auto;
+	}
+	.project-contain {
+		padding: 1rem;
+		display: grid;
+		place-content: center;
+
+		.project,
+		.project-contain h3 {
+			width: 380px;
+		}
+
+		.project {
+			height: 300px;
+			overflow: hidden;
+			a {
+				display: block;
+			}
+			img {
+				height: 280px;
+				width: 380px;
+				border-radius: 1.5rem;
+			}
+			h3 {
+				display: grid;
+				place-content: center;
+				height: 280px;
+				width: 380px;
+				border-radius: 1.5rem;
+				color: transparent;
+				font-size: 2rem;
+				transform: translateY(-287px);
+				transition: all 2s ease;
+			}
+
+			&:hover {
+				h3 {
+					color: $tertiaryColor;
+					background: rgba(0, 0, 0, 0.377);
+				}
+			}
+		}
+	}
+}
+
+// contact-me
+.contact-me {
+	form {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+
+		::placeholder {
+			font-family: 'Poppins', sans-serif;
+			font-size: 1rem;
+		}
+
+		input,
+		textarea {
+			padding: 0.5rem 1rem;
+			margin: 1rem;
+			margin-bottom: 0;
+			// font-size: 1.2rem;
+			border: none;
+			outline: none;
+			border-bottom: 2px solid $tertiaryColor;
+			color: black;
+			background: transparent;
+		}
+		button {
+			@extend %btn;
+			margin: 2rem auto;
+			font-size: 1.2rem;
+			color: white;
+			&:hover {
+				color: $tertiaryColor;
+			}
+		}
+	}
+}
+.move-top {
+	position: relative;
+	bottom: -30px;
+	left: 90%;
+	img {
+		height: 50px;
+	}
+}
+// footer
+footer {
+	height: 20vh;
+	background: $primaryColor;
+	text-align: center;
+	color: $secondaryColor;
+	display: grid;
+	place-content: center;
+
+	a {
+		display: inline-block;
+		background: #5912b7;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 2rem;
+	}
+
+	span {
+		color: red;
+	}
+	.footer-links {
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 0.5rem;
+	}
+	.fa {
+		margin-top: 0.75rem;
+		color: $secondaryColor;
+		font-size: 1.5rem;
+		&:hover {
+			color: $tertiaryColor;
+			transform: scale(1.2);
+		}
+	}
+}
+
+// project page
+.portfolio-projects {
+	margin: 0;
+	background: white;
+}
+@import './media';

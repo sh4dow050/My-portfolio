@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Mini-Projects</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="body-contain">
+  <!-- Challenge-1 -->
+  <div class="age-in-days">
+   <h1 class="challenge-head">Challenge 1: Your Age in Days</h1>
+   <!-- <div class="seperator"></div> -->
+   <div class="btn-contain" ;">
+    <button type="button" class="convert-btn age-btn" onclick="calcAge()">click me</button>
+    <button type="button" class="reset-btn age-btn" onclick="resetAll()">reset</button>
+   </div>
+   <h1 class="user-age" style="color: rgb(0, 167, 0);"></h1>
+   <div class="seperator"></div>
+  </div>
+
+  <!--Challenge-2  -->
+  <div class="cat-gen">
+   <h1 class="challenge-head">Challenge 2: Random Cat Generator</h1>
+   <!-- <div class="seperator"></div> -->
+   <div class="btn-contain">
+    <button type="button" onclick="randomCat()" class="generator">Random Cat</button>
+   </div>
+   <div class="cat-img-contain">
+   </div>
+   <div class="seperator"></div>
+  </div>
+
+  <!--Challenge-3  -->
+  <div class="three-game">
+   <h1 class="challenge-head">Challenge 3: Rock, Papers, Scissors</h1>
+   <!-- Buttons -->
+   <button class="rock three-btn" data-text="rock"><img src="./img/rock.jpg" alt="" height="50vh"></button>
+   <button class="paper three-btn" data-text="paper"><img src="./img/Paper.jpg" alt="" height="50vh"></button>
+   <button class="scissors three-btn" data-text="scissors"><img src="./img/scissors.png" alt="" height="50vh"></button>
+   <h2 class="rps-results"></h2>
+   <div class="seperator"></div>
+  </div>
+
+  <!--Challenge-4  -->
+  <div class="change-color">
+   <h1 class="challenge-head">Challenge 4: Change the Color of all buttons</h1>
+
+   <select name="backdrop" id="dropdown-btn" onchange="btnColorChange(this)">
+    <option value="random">random</option>
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="yellow">yellow</option>
+    <option value="reset">reset</option>
+   </select>
+
+   <div class="btn-contain">
+    <button type="button" class="backdrop1">DuckDuckGo</button>
+    <button type="button" class="backdrop2">Google</button>
+    <button type="button" class="backdrop3">Yahoo</button>
+    <button type="button" class="backdrop4">Yandex</button>
+   </div>
+   <div class="seperator"></div>
+  </div>
+
+  <!--Challenge-5  -->
+  <div class="blackjack">
+   <h1 class="challenge-head">Challenge 5: Blackjack</h1>
+   <h3 class="challenge-head feedback">Let's Play</h3>
+   <div class="seperator"></div>
+   <div class="blackjack-contain">
+    <div class="scores">
+     <div class="your-container">
+      <h2>You: <span class="your-blackjack-results">0</span> </h2>
+      <div class="your-img-container"></div>
+     </div>
+     <div class="seperator hori-seperator"></div>
+     <div class="dealer-container">
+      <h2>Dealer: <span class="dealer-blackjack-results">0</span> </h2>
+      <div class="dealer-img-container"></div>
+     </div>
+    </div>
+    <div class="btn-contain">
+     <button type="button" class="hit-btn blackjack-btns">hit</button>
+     <button type="button" class="stand-btn blackjack-btns">stand</button>
+     <button type="button" class="deal-btn blackjack-btns">deal</button>
+    </div>
+   </div>
+   <table>
+    <tr>
+     <th>Wins</th>
+     <th>Losses</th>
+     <th>Draws</th>
+    </tr>
+    <tr>
+     <td id="wins">0</td>
+     <td id="losses">0</td>
+     <td id="draws">0</td>
+    </tr>
+   </table>
+  </div>
+
+ </div>
+ <!-- JavaScripts -->
+ <script src="./Js/script-1.js"></script>
+</body>
+
+</html>

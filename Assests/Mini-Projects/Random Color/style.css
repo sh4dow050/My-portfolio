@@ -1,0 +1,27 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.color-contain {
+	border: 2px solid white;
+	border-radius: 0.6rem;
+	padding: 1rem;
+}
+
+.change-color {
+	height: 20%;
+	background: white;
+	color: black;
+	border: 2px solid;
+}
+
+button {
+	display: block;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0.6rem;
+	margin: 0 auto;
+	outline: none;
+}
