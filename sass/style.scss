@@ -128,7 +128,11 @@
 		padding: 1rem;
 		display: grid;
 		place-content: center;
-
+		text-align: center;
+		a {
+			display: block;
+			margin: 0 auto;
+		}
 		.project,
 		.project-contain h3 {
 			width: 380px;
@@ -137,9 +141,7 @@
 		.project {
 			height: 300px;
 			overflow: hidden;
-			a {
-				display: block;
-			}
+
 			img {
 				height: 280px;
 				width: 380px;

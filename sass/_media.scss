@@ -52,7 +52,7 @@
 		place-content: center;
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 0.6rem;
-		grid-row-gap: 0.6rem;
+		grid-row-gap: 3rem;
 	}
 
 	form {
@@ -60,7 +60,7 @@
 	}
 }
 
-@media screen and (min-width: 1112px) {
+@media screen and (min-width: 1254px) {
 	.skills-contain {
 		.skill-4 {
 			display: none;
@@ -83,12 +83,10 @@
 		place-content: center;
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 0.6rem;
-		grid-row-gap: 0.6rem;
+		grid-row-gap: 3rem;
 
 		h3,
 		a {
-			display: block;
-			margin: 0 auto;
 			height: 280px;
 			width: 380px !important ;
 		}
