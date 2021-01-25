@@ -175,29 +175,30 @@
 	form {
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding: 1rem 2rem;
 
-		::placeholder {
-			font-family: 'Poppins', sans-serif;
-			font-size: 1rem;
+		label {
+			margin: 1.2rem 0rem 0.1rem 0rem;
+			font-size: 1.1rem;
 		}
-
-		input,
-		textarea {
-			padding: 0.5rem 1rem;
-			margin: 1rem;
-			margin-bottom: 0;
-			// font-size: 1.2rem;
-			border: none;
+		textarea,
+		input {
+			border-radius: 0.19rem;
+			border: 1px solid $tertiaryColor;
+			padding: 0.5rem;
 			outline: none;
-			border-bottom: 2px solid $tertiaryColor;
-			color: black;
-			background: transparent;
+
+			&:focus {
+				border: none;
+				border-bottom: 1px solid $tertiaryColor;
+				border-radius: 0rem;
+			}
 		}
 		button {
 			@extend %btn;
+			padding: 0.6rem 3rem;
 			margin: 2rem auto;
-			font-size: 1.2rem;
+			font-size: 1.3rem;
 			color: white;
 			&:hover {
 				color: $tertiaryColor;
@@ -205,6 +206,7 @@
 		}
 	}
 }
+
 .move-top {
 	position: relative;
 	bottom: -30px;

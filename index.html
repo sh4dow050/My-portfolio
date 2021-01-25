@@ -147,10 +147,12 @@
    <div class="underline"></div>
   </div>
   <form name="contact" method="POST" data-netlify="true">
-   <input type="text" name="name" placeholder="Name" required />
-   <input type="email" name="email" placeholder="name@example.com" required />
-
-   <textarea name="" id="" rows="2" placeholder="Your Message" required></textarea>
+   <label for="name">Name</label>
+   <input type="text" name="name" required />
+   <label for="email">Email</label>
+   <input type="email" name="email" required />
+   <label for="textarea">Your Message</label>
+   <textarea name="" id="" rows="3" required></textarea>
    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
    <button type="submit" class="pageclip-form__submit">
     <span>Send</span>
