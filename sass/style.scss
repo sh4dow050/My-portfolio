@@ -259,4 +259,15 @@ footer {
 	margin: 0;
 	background: white;
 }
+
+// scroll nav
+.nav-scrolled {
+	.logo-space {
+		padding: 0;
+		img {
+			margin: 0;
+		}
+	}
+}
+
 @import './media';

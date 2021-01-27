@@ -61,24 +61,31 @@
 
 @media screen and (min-width: 880px) {
 	.banner {
-		display: grid;
+		background-image: url('../Assests/svg/circle.svg'),
+			linear-gradient(360deg, #4600c0, $primaryColor);
 		grid-template-columns: repeat(2, 50vw);
+		clip-path: unset;
+		.banner-contain {
+			height: 100%;
+			transform: unset;
+		}
 		.banner-contain-img {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 
 			img {
-				width: 150px;
+				width: 600px;
 				margin-right: 1rem;
+				// transform: translateY(-5.75rem);
 			}
-			.code-review {
-				transform: translateY(-7.75rem);
-				width: 200px;
-			}
-			.web-search {
-				transform: translateY(-3.8rem);
-			}
+			// .code-review {
+			//
+			// 	width: 200px;
+			// }
+			// .web-search {
+			// 	transform: translateY(-3.8rem);
+			// }
 		}
 		&-contain {
 			text-align: left;
