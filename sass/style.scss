@@ -93,6 +93,10 @@
 }
 
 // skills
+
+.skills {
+	background: $primaryColor;
+}
 .skills-contain {
 	margin-top: 2rem;
 	display: grid;
@@ -121,58 +125,83 @@
 
 // projects
 .projects {
-	margin: 2.5rem 0;
-	background: $primaryColor;
-	padding-bottom: 1rem;
 	button {
+		display: none;
 		@extend %btn;
-		margin: 1rem auto;
+		margin-top: -3rem;
+		margin-bottom: 2rem;
 	}
-	.project-contain {
-		padding: 1rem;
-		display: grid;
-		place-content: center;
-		text-align: center;
+}
+.project-contain {
+	display: grid;
+	margin: 0 2rem;
+	grid-row-gap: 1rem;
+
+	.img-container,
+	.text-container {
+		@include centered;
+	}
+	img {
+		width: 85%;
+		// height: 85%;
+	}
+
+	.text-container {
+		h2 {
+			font-size: 2.5rem;
+			margin-bottom: 1.1rem;
+		}
+		h5 {
+			font-weight: normal;
+			font-size: 1rem;
+			color: rgba(0, 0, 0, 0.8);
+		}
+		p {
+			font-size: 1.2rem;
+			text-transform: capitalize;
+		}
 		a {
-			display: block;
-			margin: 0 auto;
-		}
-		.project,
-		.project-contain h3 {
-			width: 380px;
-		}
-
-		.project {
-			height: 300px;
-			overflow: hidden;
-
-			img {
-				height: 280px;
-				width: 380px;
-				border-radius: 1.5rem;
-			}
-			h3 {
-				display: grid;
-				place-content: center;
-				height: 280px;
-				width: 380px;
-				border-radius: 1.5rem;
-				color: transparent;
-				font-size: 2rem;
-				transform: translateY(-287px);
-				transition: all 2s ease;
-			}
+			color: $tertiaryColor;
+			margin-top: 1.1rem;
+			font-size: 1.4rem;
 
 			&:hover {
-				h3 {
-					color: $tertiaryColor;
-					background: rgba(0, 0, 0, 0.377);
-				}
+				color: $primaryColor;
+			}
+		}
+	}
+
+	.project {
+		display: grid;
+		height: calc(100vh - 65px);
+		// margin-top: 2rem;
+	}
+	.project-right {
+		grid-template-columns: 2fr 1fr;
+		img {
+			box-shadow: 6px 6px rgba(0, 0, 0, 0.4);
+		}
+		.img-container {
+			align-items: flex-start;
+		}
+		.text-container {
+			align-items: flex-start;
+		}
+	}
+	.project-left {
+		grid-template-columns: 1fr 2fr;
+		img {
+			box-shadow: -6px 6px rgba(0, 0, 0, 0.4);
+		}
+		.img-container {
+			align-items: flex-end;
+
+			.img-underlay {
+				transform: translate(-5px, -5px);
 			}
 		}
 	}
 }
-
 // contact-me
 .contact-me {
 	form {
@@ -252,12 +281,6 @@ footer {
 			transform: scale(1.2);
 		}
 	}
-}
-
-// project page
-.portfolio-projects {
-	margin: 0;
-	background: white;
 }
 
 // scroll nav

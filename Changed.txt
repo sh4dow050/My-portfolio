@@ -1,0 +1,144 @@
+<a href="https://music-app-waves.netlify.app/" target="0">
+    <div class="project project-7">
+     <img src="./Assests/music-player.jpg" alt="">
+     <h3>Music Player</h3>
+    </div>
+   </a>
+
+   <a href="https://githubusrfind.netlify.app/" target="null">
+    <div class="project project-7">
+     <img src="../Assests/github-project.jpg" alt="">
+     <h3>Github User Finder</h3>
+    </div>
+   </a>
+
+   <a href="./Assests/Sites/Coding Addict Project/index.html">
+    <div class="project project-1">
+     <img src="./Assests/Sites/Coding Addict Project/images/banner-img.jpeg" alt="">
+     <h3>Coding addict</h3>
+    </div>
+   </a>
+   <a href="./Assests/Sites/Grandma's Bakery Project/index.html">
+    <div class="project project-2">
+     <img src="./Assests/Sites/Grandma's Bakery Project/img/headerBcg.jpeg" alt="">
+     <h3>Grandma's Bakery</h3>
+    </div>
+   </a>
+   <a href="./Assests/Sites/Web Agency Project/index.html">
+    <div class="project project-3">
+     <img src="./Assests/Sites/Web Agency Project/images/background-banner.jpg" alt="">
+     <h3>Web Agency Project</h3>
+    </div>
+   </a>
+   <a href="./Assests/Sites/Tea Project/index.html">
+    <div class="project project-4">
+     <img src="./Assests/Sites/Tea Project/images/main-bcg.jpeg" alt="">
+     <h3>Tea Project</h3>
+    </div>
+   </a>
+   <a href="./Assests/Mini-Projects/beatBoxJS/index.html">
+    <div class="project project-5">
+     <img src="./Assests/Mini-Projects/beatBoxJS/assets/banner-img.jpg" alt="">
+     <h3>BeatBox</h3>
+    </div>
+   </a>
+   <a href="./Assests/Mini-Projects/The 5 Challenges/index.html">
+    <div class="project project-6">
+     <img src="./Assests/Mini-Projects/The 5 Challenges/img/blackjack Background.jpg" alt="">
+     <h3>The 5 Challenges</h3>
+    </div>
+   </a>
+   
+   
+   
+   
+   
+   .projects {
+	margin: 2.5rem 0;
+	background: $primaryColor;
+	padding-bottom: 1rem;
+	button {
+		@extend %btn;
+		margin: 1rem auto;
+	}
+	.project-contain {
+		padding: 1rem;
+		display: grid;
+		place-content: center;
+		text-align: center;
+		a {
+			display: block;
+			margin: 0 auto;
+		}
+		.project,
+		.project-contain h3 {
+			width: 380px;
+		}
+
+		.project {
+			height: 300px;
+			overflow: hidden;
+
+			img {
+				height: 280px;
+				width: 380px;
+				border-radius: 1.5rem;
+			}
+			h3 {
+				display: grid;
+				place-content: center;
+				height: 280px;
+				width: 380px;
+				border-radius: 1.5rem;
+				color: transparent;
+				font-size: 2rem;
+				transform: translateY(-287px);
+				transition: all 2s ease;
+			}
+
+			&:hover {
+				h3 {
+					color: $tertiaryColor;
+					background: rgba(0, 0, 0, 0.377);
+				}
+			}
+		}
+	}
+}
+
+.portfolio-projects {
+	margin: 0;
+	background: white;
+}
+
+
+
+
+#media Query
+
+.project-contain {
+		display: grid;
+		place-content: center;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 0.6rem;
+		grid-row-gap: 3rem;
+
+		h3,
+		a {
+			height: 280px;
+			width: 380px !important ;
+		}
+	}
+
+	.portfolio-projects-contain {
+		grid-row-gap: 4rem;
+	}
+	
+	
+	.project-contain {
+		display: grid;
+		place-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 0.6rem;
+		grid-row-gap: 3rem;
+	}

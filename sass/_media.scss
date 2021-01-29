@@ -46,14 +46,6 @@
 }
 
 @media screen and (min-width: 796px) {
-	.project-contain {
-		display: grid;
-		place-content: center;
-		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 0.6rem;
-		grid-row-gap: 3rem;
-	}
-
 	form {
 		margin: 0 10rem;
 	}
@@ -77,15 +69,7 @@
 			img {
 				width: 600px;
 				margin-right: 1rem;
-				// transform: translateY(-5.75rem);
 			}
-			// .code-review {
-			//
-			// 	width: 200px;
-			// }
-			// .web-search {
-			// 	transform: translateY(-3.8rem);
-			// }
 		}
 		&-contain {
 			text-align: left;
@@ -120,25 +104,45 @@
 		}
 	}
 
-	.project-contain {
-		display: grid;
-		place-content: center;
-		grid-template-columns: repeat(3, 1fr);
-		grid-column-gap: 0.6rem;
-		grid-row-gap: 3rem;
-
-		h3,
-		a {
-			height: 280px;
-			width: 380px !important ;
-		}
-	}
-
-	.portfolio-projects-contain {
-		grid-row-gap: 4rem;
-	}
-
 	form {
 		margin: 0 25rem;
+	}
+}
+
+@media screen and (max-width: 856px) {
+	.project-contain {
+		img {
+			width: 95%;
+			max-height: 400px;
+		}
+		.project {
+			// background: pink;
+			grid-template: 1fr 1fr / 1fr;
+			margin-bottom: 1rem;
+			.img-container {
+				align-items: center;
+			}
+			.text-container {
+				align-items: left;
+				h2 {
+					font-size: 1.8rem;
+					margin-bottom: 0rem;
+				}
+				h5 {
+					font-size: 0.8rem;
+				}
+				p {
+					font-size: 1rem;
+				}
+				a {
+					width: fit-content;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.change2 {
+		grid-row-start: 1;
+		grid-row-end: 2;
 	}
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
 :root {
 	--mainPink: #ef7998;
@@ -10,7 +10,7 @@
 }
 
 body {
-	font-family: "Kaushan Script", cursive;
+	font-family: 'Kaushan Script', cursive;
 	background: var(--mainWhite);
 	color: var(--mainBlack);
 }
@@ -58,7 +58,7 @@ body {
 .max-height {
 	min-height: calc(100vh - 76px);
 	background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
-		url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+		url('../img/headerBcg.jpeg') center/cover fixed no-repeat;
 	position: relative;
 }
 .banner {
@@ -139,7 +139,7 @@ body {
 }
 
 .about-img__container::before {
-	content: "";
+	content: '';
 	position: absolute;
 	top: -1.5rem;
 	left: -1.7rem;
@@ -194,4 +194,8 @@ body {
 .search-box {
 	background: var(--mainPink);
 	color: var(--mainBlack);
+}
+
+.show {
+	display: block;
 }
